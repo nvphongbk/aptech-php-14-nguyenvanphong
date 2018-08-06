@@ -1,0 +1,20 @@
+.title{display: flex;background-color: orange;margin-top: 0px;padding: 3px}
+.gioithieu{font-size: 20px;margin-left: 150px;margin-top: 5px;margin-bottom: 0%}
+.diachi{font-size: 16px;margin-top: 5px;margin-left: 150px;margin-bottom: 0;}
+.lienhe{font-size: 16px;margin-top: 0px;margin-left: 150px}
+.image{margin-left: 35px;}
+.phan2{display: flex;}
+.phan21{width:50%;margin-right: 20px}
+.content11{text-align: ./center;margin-bottom: 10px;}
+.loiich{font-size: 17px; margin-top: 10px; margin-bottom: 5px; text-align: center;}
+.taidonvi{font-size: 14px; margin-top: 5px;text-align: center;}   
+.img{display: flex; font-size: 13px;}
+.img2{display: flex; text-align: center; font-size: 13px}
+.phan22{width:50%; font-size: 30px}
+.lichkhaigiang{ text-align: center; font-size: 25px;background-color: slategrey;color: rgb(175, 45, 45)}
+.table {width:100%; text-align: center }
+.trmain {background-color: mediumvioletred}
+.tr {background-color: pink; text-align: center;}
+.phan3{display: flex;margin-top: 30px;margin-left: 0%; background-color: rgb(112, 45, 45);}
+.phan31{widows: 50%; margin-right: 30px}
+.phan32{width: 50%;margin-right: 30px;}
