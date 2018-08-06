@@ -1,0 +1,13 @@
+.title{
+    color: red;
+    text-align: center;
+}.name{
+    color: blue;
+}
+.ns{color: yellow;}
+.content{display: flex;
+    justify-content: center;}
+.marginimg{margin-right: 50px}
+.info{border: solid blue;
+padding: 10px;
+height: 100%}
