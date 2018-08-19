@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Album example</title>
+    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="album-example.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/solid.css" integrity="sha384-wnAC7ln+XN0UKdcPvJvtqIH3jOjs9pnKnq9qX68ImXvOGz2JuFoEiCjT8jyZQX2z"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/fontawesome.css" integrity="sha384-HbmWTHay9psM8qyzEKPc8odH4DsOuzdejtnr+OFtDmOcIVnhgReQ4GZBH7uwcjf6"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/solid.css" integrity="sha384-wnAC7ln+XN0UKdcPvJvtqIH3jOjs9pnKnq9qX68ImXvOGz2JuFoEiCjT8jyZQX2z"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/fontawesome.css" integrity="sha384-HbmWTHay9psM8qyzEKPc8odH4DsOuzdejtnr+OFtDmOcIVnhgReQ4GZBH7uwcjf6"
+        crossorigin="anonymous">
+</head>
+
+<body>
+    <div id="mymenu" style="display: none">
+        <div class="container-fluid bg-dark">
+            <div class="row">
+                <div class="col-md-7 offset-1">
+                    <h1 class="text-white">About</h1>
+                    <p class="text-muted">Add some information about the album below, the author, or any other background context. Make it a few
+                        sentences long so folks can pick up some informative tidbits. Then, link them off to some social
+                        networking sites or contact information.</p>
+
+                </div>
+                <div class="col-md-4">
+                    <ul style="list-style-type:none">
+                        <li>
+                            <h4 class="text-white">Contact</h4>
+                        </li>
+                        <li>
+                            <a class="text-white" href="#">Follow on Twitter</a>
+                        </li>
+                        <li>
+                            <a class="text-white" href="#">Like on Facebook</a>
+                        </li>
+                        <li>
+                            <a class="text-white" href="#">Email me</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="bg-dark">
+        <div class="navbar navbar-dark bg-dark offset-1">
+            <div class="d-flex justify-content-md-between">
+                <a href="#" class="navbar-brand d-flex align-items-center">
+                    <i class="fas fa-camera text-white pr-2"></i>
+                    <strong class="text-white">Album</strong>
+                </a>
+            </div>
+            <button onclick="myFunction()" class="mr-5 bg-transparent">
+                <i class="fas fa-bars fa-md text-white"></i>
+            </button>
+        </div>
+    </div>
+    <div class="container d-flex justify-content-between align-items-center">
+        <div class="row">
+            <div>
+                <div class="col-md-6 offset-3 text-center">
+                    <h1>Album example</h1>
+                    <p>Something short and leading about the collection below—its contents, the creator, etc. Make it short
+                        and sweet, but not too short so folks don't simply skip over it entirely.</p>
+                </div>
+                <div class="text-center">
+                    <a href="#" class="btn btn-primary">Main call to action</a>
+                    <a href="#" class="btn btn-secondary">Secondary action</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container album">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="https://picsum.photos/200/100" class="card-img-top bg-dark">
+                    <div class="card-body">
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This
+                            content is a little bit longer.</p>
+                        <div class="d-flex justify-content-between">
+                            <div class="btn-group">
+                                <button class="btn btn-outline-dark">View</button>
+                                <button class="btn btn-outline-dark">Edit</button>
+                            </div>
+                            <p class="text-muted">9 mins</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img class="card-img-top" src="https://picsum.photos/200/100" alt="">
+                    <div class="card-body">
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This
+                            content is a little bit longer.</p>
+                        <div class="d-flex justify-content-between">
+                            <div class="btn-group">
+                                <button class="btn btn-outline-dark">View</button>
+                                <button class="btn btn-outline-dark">View</button>
+                            </div>
+                            <p class="text-muted">9 mins</p>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img class="card-img-top" src="https://picsum.photos/200/100" alt="">
+                    <div class="card-body">
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This
+                            content is a little bit longer.</p>
+                        <div class="d-flex justify-content-between">
+                            <div class="btn-group">
+                                <button class="btn btn-outline-dark">View</button>
+                                <button class="btn btn-outline-dark">View</button>
+                            </div>
+                            <p class="text-muted">9 mins</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-4">
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="https://picsum.photos/200/100" class="card-img-top bg-dark">
+                    <div class="card-body">
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This
+                            content is a little bit longer.</p>
+                        <div class="d-flex justify-content-between">
+                            <div class="btn-group">
+                                <button class="btn btn-outline-dark">View</button>
+                                <button class="btn btn-outline-dark">Edit</button>
+                            </div>
+                            <p class="text-muted">9 mins</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img class="card-img-top" src="https://picsum.photos/200/100" alt="">
+                    <div class="card-body">
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This
+                            content is a little bit longer.</p>
+                        <div class="d-flex justify-content-between">
+                            <div class="btn-group">
+                                <button class="btn btn-outline-dark">View</button>
+                                <button class="btn btn-outline-dark">View</button>
+                            </div>
+                            <p class="text-muted">9 mins</p>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img class="card-img-top" src="https://picsum.photos/200/100" alt="">
+                    <div class="card-body">
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This
+                            content is a little bit longer.</p>
+                        <div class="d-flex justify-content-between">
+                            <div class="btn-group">
+                                <button class="btn btn-outline-dark">View</button>
+                                <button class="btn btn-outline-dark">View</button>
+                            </div>
+                            <p class="text-muted">9 mins</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container footer">
+        <div class="row d-flex justify-content-between">
+            <div class="col-md-8 text-muted ">
+                <p>Album example is © Bootstrap, but please download and customize it for yourself!</p>
+                <p>New to Bootstrap?
+                    <a href="#">Visit the homepage</a>or read oura
+                    <a href="#">getting started guide.</a>
+                </p>
+            </div>
+            <div class="col-md-4 text-center">
+                <a href="#">Back to top</a>
+            </div>
+        </div>
+    </div>
+    <script src="album-examble.js"></script>
+</body>
+
+</html>
