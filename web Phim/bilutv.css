@@ -1,0 +1,24 @@
+#bg-color{
+    background-color: rgb(62, 4, 85)
+}
+#search{
+    width: 400px
+}
+.card-img-top{
+    height: 230px;
+}
+.topview{
+    height:120px;
+    width: 100px;;
+    margin-bottom: 5px;
+}
+Footer{
+    background-color: rgba(27, 23, 43, 0.959)   
+}
+.nowrap {
+    white-space: nowrap ;
+  }
+  ul{
+    columns: 2;
+    list-style-position: inside;
+}

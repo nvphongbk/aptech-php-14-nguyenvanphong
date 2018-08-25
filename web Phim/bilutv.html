@@ -1,0 +1,717 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="bootstrap1.css">
+    <link rel="stylesheet" href="bilutv.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <title>BiluTV - Xem Phim Nhanh, Xem Phim Online, Phim VietSub, Thuyết Minh Hay Nhất</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/solid.css" integrity="sha384-wnAC7ln+XN0UKdcPvJvtqIH3jOjs9pnKnq9qX68ImXvOGz2JuFoEiCjT8jyZQX2z"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/fontawesome.css" integrity="sha384-HbmWTHay9psM8qyzEKPc8odH4DsOuzdejtnr+OFtDmOcIVnhgReQ4GZBH7uwcjf6"
+        crossorigin="anonymous">
+
+
+</head>
+
+<body class="bg-dark">
+    <div class="Header" id="bg-color">
+        <div class="container" id="bg-color">
+            <nav class="navbar d-flex justify-content-between align-items-center" id="bg-color">
+                <a class="navbar-brand" href="#">
+                    <img src="http://media.bilutv.com/images/logo.png" class="logo">
+                </a>
+                <form action="/tim-kiem.html" class="form-inline">
+                    <input type="text" placeholder="Nhập tên phim, diễn viên,..." class="rounded" id="search">
+                    <button class="btn btn-primary ml-3">Tim kiếm</button>
+                </form>
+                <div class="btn-group">
+                    <button class="btn btn-success rounded">
+                        <i class="fa fa-user-plus"></i>
+                        <span>Đăng nhập</span>
+                    </button>
+                    <button class="btn btn-success ml-2 rounded px-4">
+                        <i class="fa fa-sign-in"></i>
+                        <span>Đăng Ký</span>
+                    </button>
+                </div>
+                <p class="text-white">Cú pháp tìm kiếm phim nhanh nhất trên Google: [Tên phim + bilutv]. Xem hướng dẫn
+                    <a href="#">tại đây</a>
+                </p>
+        </div>
+    </div>
+    <div class="container bg-secondary my-1">
+        <nav class="navbar navbar-expand">
+            <div class="navbar-collapse collapse">
+
+                <ul class="navbar-nav d-flex justify-content-between align-items-center  w-100">
+                    <li class="nav-item active text-white">
+                        <a href="#" class="nav-link">
+                            <i class="fas fa-home fa-2x text-white"></i>
+                            <span class="sr-only">(current)</span>
+                        </a>
+                    </li>
+                    <li class="nav-item active text-white theLoai">
+                        <a href="#" class="nav-link text-white">
+                            <i class="fas fa-clone"></i>
+                            Thể loại
+                            <span class="sr-only">(current)</span>
+                        </a>
+
+
+                        <div id="theLoai" style="display: none">
+                            <ul style=" list-style-type:none">
+                                <li>
+                                    <a title="Cổ Trang - Thần Thoại" href="/the-loai/co-trang-than-thoai-6.html">Cổ Trang - Thần Thoại</a>
+                                </li>
+                                <li>
+                                    <a title="Võ Thuật - Kiếm Hiệp" href="/the-loai/vo-thuat-kiem-hiep-4.html">Võ Thuật - Kiếm Hiệp</a>
+                                </li>
+                                <li>
+                                    <a title="Phiêu lưu -  Hành động" href="/the-loai/phieu-luu-hanh-dong-1.html">Phiêu lưu - Hành động</a>
+                                </li>
+                                <li>
+                                    <a title="Tâm Lý - Tình Cảm" href="/the-loai/tam-ly-tinh-cam-51.html">Tâm Lý - Tình Cảm</a>
+                                </li>
+                                <li>
+                                    <a title="Phim Hoạt Hình" href="/the-loai/phim-hoat-hinh-55.html">Phim Hoạt Hình</a>
+                                </li>
+                                <li>
+                                    <a title="Khoa Học - Viễn Tưởng" href="/the-loai/khoa-hoc-vien-tuong-2.html">Khoa Học - Viễn Tưởng</a>
+                                </li>
+                                <li>
+                                    <a title="Hình Sự - Chiến Tranh" href="/the-loai/hinh-su-chien-tranh-7.html">Hình Sự - Chiến Tranh</a>
+                                </li>
+                                <li>
+                                    <a title="Tài Liệu - Khám Phá" href="/the-loai/tai-lieu-kham-pha-3.html">Tài Liệu - Khám Phá</a>
+                                </li>
+                                <li>
+                                    <a title="Văn Hóa - Tâm Linh" href="/the-loai/van-hoa-tam-linh-53.html">Văn Hóa - Tâm Linh</a>
+                                </li>
+                                <li>
+                                    <a title="Hài Hước" href="/the-loai/hai-huoc-52.html">Hài Hước</a>
+                                </li>
+                                <li>
+                                    <a title="Thể Thao - Âm Nhạc" href="/the-loai/the-thao-am-nhac-54.html">Thể Thao - Âm Nhạc</a>
+                                </li>
+                                <li>
+                                    <a title="Kinh Dị - Ma" href="/the-loai/kinh-di-ma-5.html">Kinh Dị - Ma</a>
+                                </li>
+                                <li>
+                                    <a title="Gia Đình - Học Đường" href="/the-loai/gia-dinh-hoc-duong-58.html">Gia Đình - Học Đường</a>
+                                </li>
+                                <li>
+                                    <a title="TV Show" href="/the-loai/tv-show-57.html">TV Show</a>
+                                </li>
+                                <li>
+                                    <a title="Chiếu Rạp" href="/the-loai/chieu-rap-56.html">Chiếu Rạp</a>
+                                </li>
+                                <li>
+                                    <a title="Xuyên Không" href="/the-loai/xuyen-khong-61.html">Xuyên Không</a>
+                                </li>
+                                <li>
+                                    <a title="Phim Thuyết Minh" href="/the-loai/phim-thuyet-minh-59.html">Phim Thuyết Minh</a>
+                                </li>
+                                <li>
+                                    <a title="Phim Lồng Tiếng" href="/the-loai/phim-long-tieng-60.html">Phim Lồng Tiếng</a>
+                                </li>
+                                <li>
+                                    <a title="Trinh Thám" href="/the-loai/trinh-tham-62.html">Trinh Thám</a>
+                                </li>
+                            </ul>
+                        </div>
+
+
+
+
+
+                    </li>
+                    <li class="nav-item active text-white quocGia">
+                        <a href="#" class="nav-link text-white">
+                            <i class="fa fa-globe"></i>
+                            Quốc gia
+                            <span class="sr-only">(current)</span>
+                        </a>
+
+
+                        <div id="quocGia" style="display: none">
+                            <ul style="list-style: none">
+                                <li class="sub-menu-item">
+                                    <a title="Phim lẻ Việt Nam" href="/danh-sach/phim-le-viet-nam-7.html">Phim lẻ Việt Nam</a>
+                                </li>
+                                <li class="sub-menu-item">
+                                    <a title="Phim lẻ Trung Quốc" href="/danh-sach/phim-le-trung-quoc-2.html">Phim lẻ Trung Quốc</a>
+                                </li>
+                                <li class="sub-menu-item">
+                                    <a title="Phim lẻ Hàn Quốc" href="/danh-sach/phim-le-han-quoc-5.html">Phim lẻ Hàn Quốc</a>
+                                </li>
+                                <li class="sub-menu-item">
+                                    <a title="Phim lẻ Thái Lan" href="/danh-sach/phim-le-thai-lan-6.html">Phim lẻ Thái Lan</a>
+                                </li>
+                                <li class="sub-menu-item">
+                                    <a title="Phim lẻ Hồng Kông" href="/danh-sach/phim-le-hong-kong-10.html">Phim lẻ Hồng Kông</a>
+                                </li>
+                                <li class="sub-menu-item">
+                                    <a title="Phim lẻ Âu - Mỹ" href="/danh-sach/phim-le-au-my-3.html">Phim lẻ Âu - Mỹ</a>
+                                </li>
+                                <li class="sub-menu-item">
+                                    <a title="Phim lẻ Đài Loan" href="/danh-sach/phim-le-dai-loan-1.html">Phim lẻ Đài Loan</a>
+                                </li>
+                                <li class="sub-menu-item">
+                                    <a title="Phim lẻ Nhật Bản" href="/danh-sach/phim-le-nhat-ban-8.html">Phim lẻ Nhật Bản</a>
+                                </li>
+                                <li class="sub-menu-item">
+                                    <a title="Phim lẻ Ấn Độ" href="/danh-sach/phim-le-an-do-11.html">Phim lẻ Ấn Độ</a>
+                                </li>
+                                <li class="sub-menu-item">
+                                    <a title="Phim lẻ Philippines" href="/danh-sach/phim-le-philippines-12.html">Phim lẻ Philippines</a>
+                                </li>
+                                <li class="sub-menu-item">
+                                    <a title="Phim lẻ Quốc gia khác" href="/danh-sach/phim-le-quoc-gia-khac-9.html">Phim lẻ Quốc gia khác</a>
+                                </li>
+                            </ul>
+                    </li>
+
+
+
+
+                    <li class="nav-item active text-white phimLe">
+                        <a href="#" class="nav-link text-white">
+                            <i class="fa fa-film"></i>
+                            Phim lẻ
+                            <span class="sr-only">(current)</span>
+                        </a>
+                        <ul style="list-style: none;display: none" id="phimLe">
+                            <li class="sub-menu-item">
+                                <a title="Phim lẻ Việt Nam" href="/danh-sach/phim-le-viet-nam-7.html">Phim lẻ Việt Nam</a>
+                            </li>
+                            <li class="sub-menu-item">
+                                <a title="Phim lẻ Trung Quốc" href="/danh-sach/phim-le-trung-quoc-2.html">Phim lẻ Trung Quốc</a>
+                            </li>
+                            <li class="sub-menu-item">
+                                <a title="Phim lẻ Hàn Quốc" href="/danh-sach/phim-le-han-quoc-5.html">Phim lẻ Hàn Quốc</a>
+                            </li>
+                            <li class="sub-menu-item">
+                                <a title="Phim lẻ Thái Lan" href="/danh-sach/phim-le-thai-lan-6.html">Phim lẻ Thái Lan</a>
+                            </li>
+                            <li class="sub-menu-item">
+                                <a title="Phim lẻ Hồng Kông" href="/danh-sach/phim-le-hong-kong-10.html">Phim lẻ Hồng Kông</a>
+                            </li>
+                            <li class="sub-menu-item">
+                                <a title="Phim lẻ Âu - Mỹ" href="/danh-sach/phim-le-au-my-3.html">Phim lẻ Âu - Mỹ</a>
+                            </li>
+                            <li class="sub-menu-item">
+                                <a title="Phim lẻ Đài Loan" href="/danh-sach/phim-le-dai-loan-1.html">Phim lẻ Đài Loan</a>
+                            </li>
+                            <li class="sub-menu-item">
+                                <a title="Phim lẻ Nhật Bản" href="/danh-sach/phim-le-nhat-ban-8.html">Phim lẻ Nhật Bản</a>
+                            </li>
+                            <li class="sub-menu-item">
+                                <a title="Phim lẻ Ấn Độ" href="/danh-sach/phim-le-an-do-11.html">Phim lẻ Ấn Độ</a>
+                            </li>
+                            <li class="sub-menu-item">
+                                <a title="Phim lẻ Philippines" href="/danh-sach/phim-le-philippines-12.html">Phim lẻ Philippines</a>
+                            </li>
+                            <li class="sub-menu-item">
+                                <a title="Phim lẻ Quốc gia khác" href="/danh-sach/phim-le-quoc-gia-khac-9.html">Phim lẻ Quốc gia khác</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item active text-white phimBo">
+                        <a href="#" class="nav-link text-white">
+                            <i class="fa fa-th-list"></i>
+                            Phim bộ
+                            <span class="sr-only">(current)</span>
+                        </a>
+                        <ul style="list-style: none;display: none;" id="phimBo">
+                            <li class="sub-menu-item">
+                                <a title="Phim bộ Việt Nam" href="/danh-sach/phim-bo-viet-nam-7.html">Phim bộ Việt Nam</a>
+                            </li>
+                            <li class="sub-menu-item">
+                                <a title="Phim bộ Trung Quốc" href="/danh-sach/phim-bo-trung-quoc-2.html">Phim bộ Trung Quốc</a>
+                            </li>
+                            <li class="sub-menu-item">
+                                <a title="Phim bộ Hàn Quốc" href="/danh-sach/phim-bo-han-quoc-5.html">Phim bộ Hàn Quốc</a>
+                            </li>
+                            <li class="sub-menu-item">
+                                <a title="Phim bộ Thái Lan" href="/danh-sach/phim-bo-thai-lan-6.html">Phim bộ Thái Lan</a>
+                            </li>
+                            <li class="sub-menu-item">
+                                <a title="Phim bộ Hồng Kông" href="/danh-sach/phim-bo-hong-kong-10.html">Phim bộ Hồng Kông</a>
+                            </li>
+                            <li class="sub-menu-item">
+                                <a title="Phim bộ Âu - Mỹ" href="/danh-sach/phim-bo-au-my-3.html">Phim bộ Âu - Mỹ</a>
+                            </li>
+                            <li class="sub-menu-item">
+                                <a title="Phim bộ Đài Loan" href="/danh-sach/phim-bo-dai-loan-1.html">Phim bộ Đài Loan</a>
+                            </li>
+                            <li class="sub-menu-item">
+                                <a title="Phim bộ Nhật Bản" href="/danh-sach/phim-bo-nhat-ban-8.html">Phim bộ Nhật Bản</a>
+                            </li>
+                            <li class="sub-menu-item">
+                                <a title="Phim bộ Ấn Độ" href="/danh-sach/phim-bo-an-do-11.html">Phim bộ Ấn Độ</a>
+                            </li>
+                            <li class="sub-menu-item">
+                                <a title="Phim bộ Philippines" href="/danh-sach/phim-bo-philippines-12.html">Phim bộ Philippines</a>
+                            </li>
+                            <li class="sub-menu-item">
+                                <a title="Phim bộ Quốc gia khác" href="/danh-sach/phim-bo-quoc-gia-khac-9.html">Phim bộ Quốc gia khác</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item active text-white">
+                        <a href="#" class="nav-link text-white">
+                            <i class="fa fa-bolt"></i>
+                            Phim hoạt hình
+                            <span class="sr-only">(current)</span>
+                        </a>
+                    </li>
+                    <li class="nav-item active text-white">
+                        <a href="#" class="nav-link text-white">
+                            <i class="fa fa-eye"></i>
+                            Phim xem nhiều
+                            <span class="sr-only">(current)</span>
+                        </a>
+                    </li>
+                    <li class="nav-item active text-white">
+                        <a href="#" class="nav-link text-white">
+                            <i class="fa fa-tasks"></i>
+                            Phim chiếu rạp
+                            <span class="sr-only">(current)</span>
+                        </a>
+                    </li>
+                </ul>
+                </div>
+        </nav>
+        </div>
+        <div class="container bg-dark">
+            <div class="row">
+                <div class="col-md-8">
+                    <div id="demo" class="carousel slide" data-ride="carousel">
+                        <!-- Indicators -->
+                        <ul class="carousel-indicators ">
+                            <li data-target="#demo" data-slide-to="0" class="active"></li>
+                            <li data-target="#demo" data-slide-to="1"></li>
+                            <li data-target="#demo" data-slide-to="2"></li>
+                            <li data-target="#demo" data-slide-to="3"></li>
+                            <li data-target="#demo" data-slide-to="4"></li>
+                            <li data-target="#demo" data-slide-to="5"></li>
+                        </ul>
+
+                        <!-- The slideshow -->
+                        <div class="carousel-inner d-md-flex justify-content-md-center">
+                            <div class="carousel-item active">
+                                <a href="#">
+                                    <img src="f1.jpg" width="100%" height="300px" alt="film1" class="m-0">
+                                </a>
+                            </div>
+                            <div class="carousel-item">
+                                <a href="#">
+                                    <img src="f2.jpg" width="100%" height="300px" alt="film2">
+                                </a>
+                            </div>
+                            <div class="carousel-item">
+                                <a href="#">
+                                    <img src="f3.jpg" width="100%" height="300px" alt="film3">
+                                </a>
+                            </div>
+                            <div class="carousel-item">
+                                <a href="#">
+                                    <img src="f4.jpg" width="100%" height="300px" alt="film4">
+                                </a>
+                            </div>
+                            <div class="carousel-item">
+                                <a href="3">
+                                    <img src="f5.jpg" width="100%" height="300px" alt="film5">
+                                </a>
+                            </div>
+                            <div class="carousel-item">
+                                <a href="#">
+                                    <img src="f6.jpg" width="100%" height="300px" alt="film 6">
+                                </a>
+                            </div>
+
+
+                            <!-- Left and right controls -->
+                            <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                                <span class="carousel-control-prev-icon"></span>
+                            </a>
+                            <a class="carousel-control-next" href="#demo" data-slide="next">
+                                <span class="carousel-control-next-icon"></span>
+                            </a>
+
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center bg-secondary text-white mt">
+                        <h6>
+                            <i class="fas fa-bars m-2"></i>PHIM BỘ MỚI CẬP NHẬT</h6>
+                        <p>
+                            <b>
+                                <a href="#" class="text-white">Xem tất cả >></a>
+                            </b>
+                        </p>
+                    </div>
+
+                    <div class="card-group text-white">
+                        <div class="card">
+                            <img class="card-img-top" src="thien-thinh-truong-ca-201808272.jpg" alt="Card image cap">
+                            <div class="card-body bg-dark">
+                                <p class="card-title nowrap">Thiên thịnh trường ca</p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img class="card-img-top" src="tinh-nong-van-vuong-dung-text12-07-201817g03-07-201807276.jpg" alt="Card image cap">
+                            <div class="card-body  bg-dark">
+                                <p class="card-title nowrap">Tình Nồng Vấn Vương</p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img class="card-img-top" src="nguoi-vo-than-quen.jpg" alt="Card image cap">
+                            <div class="card-body  bg-dark">
+                                <p class="card-title nowrap">Người Vợ Thân Quen</p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img class="card-img-top" src="cach-nga-trieu-hoi.jpg" alt="Card image cap">
+                            <div class="card-body bg-dark">
+                                <p class="card-title">Cách Ngăn Triệu Hồi</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card-group text-white">
+                        <div class="card">
+                            <img class="card-img-top" src="boruto-naruto-next-generations-2017-201704963.jpg" alt="Card image cap">
+                            <div class="card-body bg-dark">
+                                <p class="card-title">Boruto</p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img class="card-img-top" src="co-em-ho-bat-dac-di-thai-dung18-07-201822g08-42-201807741.jpg" alt="Card image cap">
+                            <div class="card-body  bg-dark">
+                                <p class="card-title nowrap">Cô Em Họ Bất Đắt Dĩ</p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img class="card-img-top" src="choc-phai-dien-ha-lan.jpg" alt="Card image cap">
+                            <div class="card-body  bg-dark">
+                                <p class="card-title nowrap">Chọc Phải Điện Hạ Lan</p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img class="card-img-top" src="sa-hai.jpg" alt="Card image cap">
+                            <div class="card-body bg-dark">
+                                <p class="card-title">Sa hải</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center bg-secondary text-white">
+                        <h6>
+                            <i class="fas fa-bars mx-2"></i>PHIM LẺ MỚI CẬP NHẬT</h6>
+                        <p>
+                            <b>
+                                <a href="#" class="text-white">Xem tất cả >></a>
+                            </b>
+                        </p>
+                    </div>
+
+                    <div class="card-group text-white">
+                        <div class="card">
+                            <img class="card-img-top" src="thien-thinh-truong-ca-201808272.jpg" alt="Card image cap">
+                            <div class="card-body bg-dark">
+                                <p class="card-title nowrap">Thiên thịnh trường ca</p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img class="card-img-top" src="tinh-nong-van-vuong-dung-text12-07-201817g03-07-201807276.jpg" alt="Card image cap">
+                            <div class="card-body  bg-dark">
+                                <p class="card-title nowrap">Tình Nồng Vấn Vương</p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img class="card-img-top" src="nguoi-vo-than-quen.jpg" alt="Card image cap">
+                            <div class="card-body  bg-dark">
+                                <p class="card-title nowrap">Người Vợ Thân Quen</p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img class="card-img-top" src="cach-nga-trieu-hoi.jpg" alt="Card image cap">
+                            <div class="card-body bg-dark">
+                                <p class="card-title nowrap">Cách Ngăn Triệu Hồi</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card-group text-white">
+                        <div class="card">
+                            <img class="card-img-top" src="boruto-naruto-next-generations-2017-201704963.jpg" alt="Card image cap">
+                            <div class="card-body bg-dark">
+                                <p class="card-title">Boruto</p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img class="card-img-top" src="co-em-ho-bat-dac-di-thai-dung18-07-201822g08-42-201807741.jpg" alt="Card image cap">
+                            <div class="card-body  bg-dark">
+                                <p class="card-title nowrap">Cô Em Họ Bất Đắt Dĩ</p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img class="card-img-top" src="choc-phai-dien-ha-lan.jpg" alt="Card image cap">
+                            <div class="card-body  bg-dark">
+                                <p class="card-title nowrap">Chọc Phải Điện Hạ Lan</p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img class="card-img-top" src="sa-hai.jpg" alt="Card image cap">
+                            <div class="card-body bg-dark">
+                                <p class="card-title">Sa hải</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center bg-secondary text-white">
+                        <h6>
+                            <i class="fas fa-bars m-2"></i>PHIM HOẠT HÌNH</h6>
+                        <p>
+                            <b>
+                                <a href="#" class="text-white">Xem tất cả >></a>
+                            </b>
+                        </p>
+                    </div>
+                    <div class="card-group text-white">
+                        <div class="card">
+                            <img class="card-img-top" src="trach-thien-ky.jpg" alt="Card image cap">
+                            <div class="card-body bg-dark">
+                                <p class="card-title">Trạch Thiên Ký</p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img class="card-img-top" src="de-vuong.jpg" alt="Card image cap">
+                            <div class="card-body  bg-dark">
+                                <p class="card-title">Đế Vương</p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img class="card-img-top" src="black-clover.jpg" alt="Card image cap">
+                            <div class="card-body  bg-dark">
+                                <p class="card-title">Black clover</p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img class="card-img-top" src="giac-mo-san-co.jpg" alt="Card image cap">
+                            <div class="card-body bg-dark">
+                                <p class="card-title">Giấc Mơ Sân Cỏ</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-group text-white">
+                        <div class="card">
+                            <img class="card-img-top" src="dai-chien-titan-3.jpg" alt="Card image cap">
+                            <div class="card-body bg-dark">
+                                <p class="card-title">Đại Chiến Titan 3</p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img class="card-img-top" src="vua-hai-tac.jpg" alt="Card image cap">
+                            <div class="card-body  bg-dark">
+                                <p class="card-title">Vua Hải Tặc</p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img class="card-img-top" src="black-clover.jpg" alt="Card image cap">
+                            <div class="card-body  bg-dark">
+                                <p class="card-title">Black clover</p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img class="card-img-top" src="binh-minh-ngay-tan-the.jpg" alt="Card image cap">
+                            <div class="card-body bg-dark">
+                                <p class="card-title">Bình Minh Ngày Tận Thế</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="bg-primary d-flex justify-content-center align-items-center text-white mt-2 p-2">
+                        <h3>Phim xem nhiều</h3>
+                    </div>
+                    <ul class="list-unstyled text-white d-flex flex-column ">
+                        <li class="media d-flex align-items-center">
+                            <img class="mr-3 mt-2 topview" src="vua-hai-tac.jpg" alt="Generic placeholder image">
+                            <div class="media-body">
+                                <p class="mt-0 mb-1">Vua Hải Tặc</p>
+                                <p> 26.966 lượt xem</p>
+                            </div>
+                        </li>
+                        <li class="media d-flex align-items-center">
+                            <img class="mr-3 topview" src="thien-thinh-truong-ca-201808272.jpg" alt="Generic placeholder image">
+                            <div class="media-body">
+                                <p class="mt-0 mb-1">Thiên Thịnh Trường Ca</p>
+                                <p> 26.966 lượt xem</p>
+                            </div>
+                        </li>
+                        <li class="media d-flex  align-items-center">
+                            <img class="mr-3 topview" src="nguoi-vo-than-quen.jpg" alt="Generic placeholder image">
+                            <div class="media-body">
+                                <p class="mt-0 mb-1">Người Vợ Thân Quen</p>
+                                <p> 26.966 lượt xem</p>
+                            </div>
+                        </li>
+                        <li class="media d-flex align-items-center">
+                            <img class="mr-3 topview" src="boruto-naruto-next-generations-2017-201704963.jpg" alt="Generic placeholder image">
+                            <div class="media-body">
+                                <p class="mt-0 mb-1">Boruto </p>
+                                <p> 26.966 lượt xem</p>
+                            </div>
+                        </li>
+                        <li class="media d-flex align-items-center">
+                            <img class="mr-3 topview" src="cach-nga-trieu-hoi.jpg" alt="Generic placeholder image">
+                            <div class="media-body">
+                                <p class="mt-0 mb-1">Cách Ngăn Triệu Hồi</p>
+                                <p> 26.966 lượt xem</p>
+                            </div>
+                        </li>
+                        <li class="media d-flex align-items-center">
+                            <img class="mr-3 topview" src="choc-phai-dien-ha-lan.jpg" alt="Generic placeholder image">
+                            <div class="media-body">
+                                <p class="mt-0 mb-1">Chọc Phải Điện Hạ</p>
+                                <p> 26.966 lượt xem</p>
+                            </div>
+                        </li>
+                        <li class="media d-flex align-items-center">
+                            <img class="mr-3 topview" src="de-vuong.jpg" alt="Generic placeholder image">
+                            <div class="media-body">
+                                <p class="mt-0 mb-1">Đế Vương</p>
+                                <p> 26.966 lượt xem</p>
+                            </div>
+                        </li>
+                        <li class="media d-flex align-items-center">
+                            <img class="mr-3 topview" src="co-em-ho-bat-dac-di-thai-dung18-07-201822g08-42-201807741.jpg" alt="Generic placeholder image">
+                            <div class="media-body">
+                                <p class="mt-0 mb-1">Cô Em Họ Bất Đắt Dĩ</p>
+                                <p> 26.966 lượt xem</p>
+                            </div>
+                        </li>
+                        <li class="media d-flex align-items-center">
+                            <img class="mr-3 topview" src="trach-thien-ky.jpg" alt="Generic placeholder image">
+                            <div class="media-body">
+                                <p class="mt-0 mb-1">Trạch Thiên Ký</p>
+                                <p> 26.966 lượt xem</p>
+                            </div>
+                        </li>
+                        <li class="media d-flex align-items-center">
+                            <img class="mr-3 topview" src="dai-chien-titan-3.jpg" alt="Generic placeholder image">
+                            <div class="media-body">
+                                <p class="mt-0 mb-1">Đại Chiến Tu Tan 3</p>
+                                <p> 26.966 lượt xem</p>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="bg-primary text-white d-flex justify-content-center align-items-center">
+                        <h3>
+                            <i class="fas fa-tags"></i>Tag</h3>
+                    </div>
+                    <div class="mt-3">
+                        <button class="btn btn-info  mt-2">Yêu lại từ đầu</button>
+                        <button class="btn btn-info  mt-2">Mạo hiểm tìm kiếm tình yêu</button>
+                        <button class="btn btn-info  mt-2">Thám tử nội trợ</button>
+                        <button class="btn btn-info  mt-2">thái tử phi thăng chức ký</button>
+                        <button class="btn btn-info mt-2">Pháp sư vô tâm</button>
+                        <button class="btn btn-info mt-2">Cô gái trên cây sake</button>
+                        <button class="btn btn-info mt-2">Mị nguyệt truyện 2015</button>
+                        <button class="btn btn-info mt-2">Tân thời minh nguyệt</button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <Footer class="mt-3">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <img src="http://media.bilutv.com/images/logo.png" class="my-3" alt="">
+                        <p class="text-muted mb-3">Copyright © 2018 BiluTV.com. All Rights Reserved. Nội dung được chia sẻ miễn phí giữa các thành viên.</p>
+
+                    </div>
+
+                    <div class="col-md-2 mt-3 list-unstyled">
+                        <p class="text-white">Đóng góp</p>
+                        <ul class=" list-unstyled d-flex flex-column">
+                            <li>
+                                <a href="http://bilutv.com/">
+                                    <p class="text-muted">Trang chủ</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <p class="text-muted">Giới thiệu</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a target="_blank" href="https://www.facebook.com/bilutv/">
+                                    <p class="text-muted">Facebook</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-2 mt-3 ">
+
+                        <p class="text-white">Đóng góp</p>
+                        <ul class=" list-unstyled d-flex flex-column">
+                            <li>
+                                <a href="http://bilutv.com/">
+                                    <p class="text-muted">Hợp tác nội dung
+                                    </p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <p class="text-muted">Hướng dẫn sử dụng</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a target="_blank" href="https://www.facebook.com/bilutv/">
+                                    <p class="text-muted">Liên hệ quảng cáo</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-2 mt-3">
+
+                        <p class="text-white">Quy định
+
+                        </p>
+                        <ul class="list-unstyled d-flex flex-column">
+                            <li>
+                                <a href="http://bilutv.com/">
+                                    <p class="text-muted">Điều khoản sử dụng
+                                    </p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <p class="text-muted">Chính sách riêng tư</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a target="_blank" href="https://www.facebook.com/bilutv/">
+                                    <p class="text-muted">Khiếu nại bản quyền</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+    </div>
+    </Footer>
+
+    <script src="bilutv.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
