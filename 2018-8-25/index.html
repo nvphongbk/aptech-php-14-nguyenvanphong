@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html >
+<head>
+    <title>JSON</title>
+    <link rel="stylesheet" href="bootstrap.css">
+</head>
+<body>
+   <div>
+       <div class="container" >
+           <div class="table-responsive">
+               <h1>table json</h1>
+               <br>
+               
+               <table class="table table-bordered table-striped" id = "js-table" style="display: none">
+                   <tr>
+                       <th >#</th><br>
+                       <th>Name</th><br>
+                       <th>Email</th><br>
+                       <th>Action</th><br>
+                   </tr>
+                   <tbody>
+                       <tr>
+                           <td id="js-id"></td>
+                           <td id="js-name"></td>
+                           <td id="js-email"></td>
+                           <td id="js-buttonaction"></td>
+                       </tr>
+                   </tbody>
+               </table>
+           </div>
+
+       </div>
+   </div>
+
+    <button onclick="loadData()" id="button">LOAD DATA</button>
+</body>
+<script src="script.js"></script>
+</html> 
