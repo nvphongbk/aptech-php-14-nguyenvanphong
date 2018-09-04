@@ -1,43 +1,58 @@
-function loadData(){
-    var request = new XMLHttpRequest();
-    request.onreadystatechange =function(){
-        if (this.readyState == 4 && this.status == 200) {
-            document.getElementById("button")
-            .style.display='none';
-            document.getElementById("js-table")
-            .style.display='block';
-            var data = JSON.parse(request.response);
-            renderData(data);
-          }
+$(document).ready(function() {
+    $('#js-button').click(function() {
+      $.get('data.json', function(data, status) {
+        if (status === 'success') {
+          var table = '<table id="js-table" class="table"></table>';
+          $('#js-div-table').append(table);
+          var thead = '<thead id="js-thead"></thead>';
+        //   $(thead).appendTo('#js-table');
+        $('#js-table').append(thead);
+          var tr = '<tr id="js-tr-head"></tr>';
+          $(tr).appendTo('#js-thead');
+          var th =
+            '<th scope="col">#</th><th scope="col">Name</th><th scope="col">Email</th>';
+          $(th).appendTo('#js-tr-head');
+          var tbody = ' <tbody></tbody>';
+          $('#js-thead').after(tbody);
+
+          var users = data.users;
+          users.forEach(function(user, index) {
+            var trBody = '<tr id="js-tr-body-' + index + '"></tr>';
+            $(trBody).appendTo('tbody');
+            var thBody = ' <th>' + user.id + '</th>';
+            var tdBody = '<td>' + user.name + '</td><td>' + user.email + '</td>';
+            $('#js-tr-body-' + index).append(thBody, tdBody);
+          });
+
+          $('#js-button').hide();
         }
-    request.open("GET","data.json" ,true)
-    request.send();
-
-}
-function renderData(data){
-     var users = data.users;
-     users.forEach(function(users,index){
-
-        var para1 = document.createElement('p');
-        var node1 = document.createTextNode(users.id);
-        para1.appendChild(node1);
-
-        var element1 = document.getElementById('js-id');
-        element1.appendChild(para1);
-
-        var para2 = document.createElement('p');
-        var node2 = document.createTextNode(users.name);
-        para2.appendChild(node2);
-    
-        var element2 = document.getElementById('js-name');
-        element2.appendChild(para2);
-
-        var para3 = document.createElement('p');
-        var node3 = document.createTextNode(users.email);
-        para3.appendChild(node3);
-    
-        var element3 = document.getElementById('js-email');
-        element3.appendChild(para3);
       });
-    
-}
+    });
+  })
+// $(document).ready(function () {
+//     $('#js-button').click(function () {
+//         $.get('http://192.168.60.141/aptech-php-demo/laravel/crud/public/api/v1/users', function (data, status) {
+//             if (status === 'success') {
+//                 var table = '<table class="table" id="js-table"></table>';
+//                 $('#js-div-table').append(table);
+//                 var thead = '<thead id="js-thead"></thead>';
+//                 $(thead).appendTo('#js-table');
+//                 var tr = '<tr id="js-thead-tr"></tr>';
+//                 $(tr).appendTo('#js-thead');
+//                 var th = '<th id="js-tr-th"></th>';
+//                 $(th).appendTo('#js-thead-tr');
+//                 var tbody = '<tbody id="tbody"></tbody>';
+//                 $('#js-thead').after(tbody);
+//                 var users = data.users;
+//                 users.forEach(function (user, index) {
+//                     var trBody = '<tr id="js-tr-body-' + index + '"></tr>';
+//                     $(trBody).appendTo('tbody');
+//                     var thBody = ' <th>' + user.id + '</th>';
+//                     var tdBody = '<td>' + user.name + '</td><td>' + user.email + '</td>';
+//                     $('#js-tr-body-' + index).append(thBody, tdBody);
+//                 }); 
+//                 $('#js-button').hide();
+//             }
+//         });
+//     });
+// })
