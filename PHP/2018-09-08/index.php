@@ -22,7 +22,7 @@
     <?php
     for ($i = 0; $i < 10; $i++) {
       echo "<tr>
-        <th scope = 'row'> $i </th >
+        <th> $i </th >
         <td> Nam $i </td>
         </tr>";
     }
