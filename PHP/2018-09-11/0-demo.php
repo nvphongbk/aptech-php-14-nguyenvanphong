@@ -49,7 +49,7 @@
 // echo '<br>';
 // echo 'ipad co gia la ' . $arr['ipad'];
 
-$arr = [
+  $arr = [
     [
       "id" => 13,
       "name" => "Nguyen Hai Nam",
@@ -86,24 +86,19 @@ $arr = [
   // }
 
 
-  foreach ($arr as $x=>$x_value)
-  {
+  foreach ($arr as $x => $x_value) {
     echo '<tr>
     <th>' . $x_value['id'] . '</th>
-    <th>' .$arr[$x]['name'] . '</th>
-    <th>' .$x_value['email'] . '</th>
-    <th>' .$x_value['password'] . '</th>
-    <th>' .$x_value['created_at'] . '</th>
+    <th>' . $arr[$x]['name'] . '</th>
+    <th>' . $x_value['email'] . '</th>
+    <th>' . $x_value['password'] . '</th>
+    <th>' . $x_value['created_at'] . '</th>
     </tr>';
-
-    
-    
-    
-    
-    
   }
-?>
-
+  ?>
+  
+</tbody>
+</table>
 
 
 
