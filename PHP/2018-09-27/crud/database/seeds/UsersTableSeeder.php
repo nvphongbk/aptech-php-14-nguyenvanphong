@@ -11,11 +11,13 @@ class UsersTableSeeder extends Seeder
      */
     public function run()
     {
+        //
         $faker = Faker\Factory::create();
-        $limit = 10;
-        for ($i = 0; $i < $limit; $i++) {
-            User::create([ //,
+        foreach (range(0, 20) as $index) {
+            User::create([
                 'name' => $faker->name,
+                'email' => $faker->safeEmail,
+                'password' => $faker->password
             ]);
         }
     }
